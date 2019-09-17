@@ -8,5 +8,5 @@ import java.util.ArrayList;
 
 public interface InstructorRepository extends CrudRepository<Instructor, Long>
 {
-    ArrayList<Instructor> findInstructorsByInstructnameEquals (String name);
+    ArrayList<Instructor> findInstructorsByInstructnameEquals(String name);
 }

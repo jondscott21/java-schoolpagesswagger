@@ -30,27 +30,82 @@
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-devtools</artifactId>
             <scope>runtime</scope>
         </dependency>
         <dependency>
             <groupId>com.h2database</groupId>
             <artifactId>h2</artifactId>
-<!--            <scope>runtime</scope>-->
+            <!--            <scope>runtime</scope>-->
         </dependency>
 
         <!-- PostgreSQL -->
-<!--        <dependency>-->
-<!--            <groupId>org.postgresql</groupId>-->
-<!--            <artifactId>postgresql</artifactId>-->
-<!--        </dependency>-->
+        <!--        <dependency>-->
+        <!--            <groupId>org.postgresql</groupId>-->
+        <!--            <artifactId>postgresql</artifactId>-->
+        <!--        </dependency>-->
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+        <!--        <dependency>-->
+        <!--            <groupId>org.springframework.boot</groupId>-->
+        <!--            <artifactId>spring-boot-starter-security</artifactId>-->
+        <!--        </dependency>-->
+        <!--        &lt;!&ndash; https://mvnrepository.com/artifact/org.springframework.security.oauth/spring-security-oauth2 &ndash;&gt;-->
+        <!--        <dependency>-->
+        <!--            <groupId>org.springframework.security.oauth</groupId>-->
+        <!--            <artifactId>spring-security-oauth2</artifactId>-->
+        <!--            <version>2.3.5.RELEASE</version>-->
+        <!--        </dependency>-->
+
+        <!--        &lt;!&ndash; https://mvnrepository.com/artifact/javax.xml.bind/jaxb-api &ndash;&gt;-->
+        <!--        <dependency>-->
+        <!--            <groupId>javax.xml.bind</groupId>-->
+        <!--            <artifactId>jaxb-api</artifactId>-->
+        <!--            <version>2.3.1</version>-->
+        <!--        </dependency>-->
+
+        <!--        &lt;!&ndash; https://mvnrepository.com/artifact/javax.activation/activation &ndash;&gt;-->
+        <!--        <dependency>-->
+        <!--            <groupId>javax.activation</groupId>-->
+        <!--            <artifactId>activation</artifactId>-->
+        <!--            <version>1.1.1</version>-->
+        <!--        </dependency>-->
+
+        <!--        &lt;!&ndash; https://mvnrepository.com/artifact/org.glassfish.jaxb/jaxb-runtime &ndash;&gt;-->
+        <!--        <dependency>-->
+        <!--            <groupId>org.glassfish.jaxb</groupId>-->
+        <!--            <artifactId>jaxb-runtime</artifactId>-->
+        <!--            <version>2.3.2</version>-->
+        <!--        </dependency>-->
+
+        <!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-api -->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>1.7.26</version>
+        </dependency>
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger2</artifactId>
+            <version>2.9.2</version>
+        </dependency>
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger-ui</artifactId>
+            <version>2.9.2</version>
+        </dependency>
+
     </dependencies>
+
 
     <build>
         <plugins>
