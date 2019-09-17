@@ -41,7 +41,7 @@ public class StudentController
                             "Multiple sort criteria are supported.")})
 
     // Please note there is no way to add students to course yet!
-    // GET localhost:2019/students/student/1
+    // GET localhost:2019/students/students
     @ApiOperation(value = "Get All Students", response = Student.class)
     @ApiResponses(value = {@ApiResponse(code = 200, message = "Students Found", response = Student.class),
             @ApiResponse(code = 404, message = "Students Not Found", response = ErrorDetail.class)})
@@ -55,6 +55,7 @@ public class StudentController
         return new ResponseEntity<>(myStudents, HttpStatus.OK);
     }
 
+    // GET localhost:2019/students/student/1
     @ApiOperation(value = "Get a Student by ID", response = Student.class)
     @ApiResponses(value = {@ApiResponse(code = 200, message = "Student Found", response = Student.class),
             @ApiResponse(code = 404, message = "Student Not Found", response = ErrorDetail.class)})
@@ -70,7 +71,7 @@ public class StudentController
         return new ResponseEntity<>(r, HttpStatus.OK);
     }
 
-
+    // GET localhost:2019/students/student/namelike/John
     @ApiOperation(value = "Get a Student by Name", response = Student.class)
     @ApiResponses(value = {@ApiResponse(code = 200, message = "Student Found", response = Student.class),
             @ApiResponse(code = 404, message = "Student Not Found", response = ErrorDetail.class)})
@@ -86,6 +87,7 @@ public class StudentController
     }
 
 
+    // GET localhost:2019/students/student/1
     @ApiOperation(value = "Create a new Student", notes = "The newly created Student id will be sent in the location header", response = void.class)
     @ApiResponses(value = {@ApiResponse(code = 201, message = "Student Created", response = void.class),
             @ApiResponse(code = 500, message = "Student Creation Failed", response = ErrorDetail.class)})
@@ -125,7 +127,7 @@ public class StudentController
 
 
     @ApiOperation(value = "Delete a Student based on Id", response = void.class)
-    @ApiResponses(value = {@ApiResponse(code = 201, message = "Student Edited", response = void.class),
+    @ApiResponses(value = {@ApiResponse(code = 201, message = "Student Deleted", response = void.class),
             @ApiResponse(code = 500, message = "Student Delete Failed", response = ErrorDetail.class)})
     @DeleteMapping("/Student/{Studentid}")
     public ResponseEntity<?> deleteStudentById(HttpServletRequest request,
