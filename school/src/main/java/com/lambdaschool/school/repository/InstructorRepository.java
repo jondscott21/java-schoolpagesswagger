@@ -1,12 +1,12 @@
 package com.lambdaschool.school.repository;
 
 import com.lambdaschool.school.model.Instructor;
-import org.springframework.data.repository.CrudRepository;
 
-import java.lang.reflect.Array;
+import org.springframework.data.repository.PagingAndSortingRepository;
+
 import java.util.ArrayList;
 
-public interface InstructorRepository extends CrudRepository<Instructor, Long>
+public interface InstructorRepository extends PagingAndSortingRepository<Instructor, Long>
 {
-    ArrayList<Instructor> findInstructorsByInstructnameEquals (String name);
+    ArrayList<Instructor> findInstructorsByInstructnameEquals(String name);
 }
